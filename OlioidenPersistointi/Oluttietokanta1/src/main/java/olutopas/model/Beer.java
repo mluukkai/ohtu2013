@@ -10,7 +10,7 @@ public class Beer {
     private String name;
     
     @Id
-    Integer id;
+    private Integer id;
     
     @ManyToOne
     Brewery brewery;

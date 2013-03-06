@@ -16,7 +16,7 @@ public class Brewery {
     private Integer id;
         
     @OneToMany(cascade = CascadeType.ALL)
-    List<Beer> beers;
+    private List<Beer> beers;
 
     public Brewery() {
     }    
