@@ -13,7 +13,7 @@ public class Beer {
     private Integer id;
     
     @ManyToOne
-    Brewery brewery;
+    private Brewery brewery;
 
     public Beer() {
     }
