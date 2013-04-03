@@ -9,6 +9,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import olutopas.model.Beer;
 import olutopas.model.Brewery;
+import olutopas.model.Pub;
+import olutopas.model.User;
 
 public class BeerTest {
 
@@ -34,6 +36,8 @@ public class BeerTest {
 
         config.addClass(Beer.class);
         config.addClass(Brewery.class);
+        config.addClass(Pub.class);
+        config.addClass(User.class);
 
         ebean = EbeanServerFactory.create(config);
     }
