@@ -1,4 +1,3 @@
-
 package com.mycompany.ohmawebkauppa.sovelluslogiikka.ohjaus;
 
 import com.mycompany.webkauppa.ohjaus.OstoksenLisaysKoriin;
@@ -19,6 +18,9 @@ public class OstoksenLisaysKoriinTest {
     @Before
     public void setUp() {
         tuote = varasto.etsiTuote(tuoteid);     
+        if ( tuote.getSaldo()==0 ) {
+            tuote.setSaldo(1);
+        } 
         kori = new Ostoskori();            
     }
     
