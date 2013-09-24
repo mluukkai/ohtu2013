@@ -8,7 +8,7 @@ description 'User can log in with valid username/password-combination'
 scenario "user can login with correct password", {
     given 'login selected', {
         driver = new HtmlUnitDriver();
-        driver.get("http://localhost:8080");
+        driver.get("http://localhost:8090");
         element = driver.findElement(By.linkText("login"));       
         element.click();       
     }

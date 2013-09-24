@@ -210,6 +210,12 @@
                     <scanIntervalSeconds>5</scanIntervalSeconds>
                     <reload>automatic</reload>
                     -->
+                    <systemProperties>
+                        <systemProperty>
+                            <name>jetty.port</name>
+                            <value>8090</value>
+                        </systemProperty>
+                    </systemProperties>
                     <stopKey>foo</stopKey>
                     <stopPort>9999</stopPort>
                     <webAppConfig>
